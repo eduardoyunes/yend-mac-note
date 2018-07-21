@@ -1,0 +1,24 @@
+// 1 = mudar as variaveis bootstrap por exemplo navbar etc 
+// 2  minha skin
+// 3 = Por ultimo, meus estilos proprios em styles.scss e esse arquivo nao precisará
+
+html {
+  -ms-text-size-adjust: 100% !important;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+.body {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1em !important;
+  line-height: 1.625em !important;
+  margin: 0 !important;
+  color: #999 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-weight: 400 !important;
+}
+
+body,
+h1 {
+  text-rendering: optimizeLegibility !important;
+}

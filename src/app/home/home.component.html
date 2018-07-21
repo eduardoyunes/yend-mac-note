@@ -1,0 +1,91 @@
+<header class="h-100">
+  <!--Navbar-->
+  <mdb-navbar SideClass="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar ie-nav" [containerInside]="true">
+    <logo>
+      <a class="navbar-brand waves-light" mdbWavesEffect href="/">
+        <img src="../../assets/img/favicon.svg" height="32" class="d-inline-block align-end pr-2" alt="logo">Yunes Endocrinologia
+      </a>
+    </logo>
+    <links>
+      <ul class="navbar-nav justify-content-space-between text-align-center mx-auto ml-lg-4">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link px-3" mdbPageScroll [pageScrollOffset]="90" href="#home">Início
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link px-3" mdbPageScroll [pageScrollOffset]="90" href="#about">Sobre</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link px-3" mdbPageScroll [pageScrollOffset]="90" href="#curriculo">Currículo</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link px-3" mdbPageScroll [pageScrollOffset]="90" href="#services">Tratamentos</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link px-3" mdbPageScroll [pageScrollOffset]="90" href="#location">Endereços</a>
+        </li>
+        <!-- Router link -->
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link pl-3" href="#contact">Blog</a>
+        </li>
+        <!-- Router link -->
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" href="#" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <!--Navbar-->
+
+  <!-- Intro Section -->
+  <section id="home">
+    <div class="view jarallax" data-jarallax='{"speed": 0.2}'>
+      <div class="view full-bg-img">
+        <div class="h-100 embed-responsive ymask">
+          <!-- embed-responsive  ^^^ -->
+          <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row d-flex text-align-center">
+              <!-- Grid column -->
+              <div class="col-md-12 text-center text-md-left margins">
+                <h1 class="header-name wow fadeInLeft" data-wow-delay="0.3s">
+                  <span>Busque o equilíbrio!</span>
+                  <strong>Dr. Eduardo B. Yunes Filho</strong>
+                </h1>
+                <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                <h4 class="header-about wow fadeInLeft">Médico Endocrinologista e Metabologista
+                  <br>
+                  <span>Pelotas/RS</span>
+                </h4>
+                <div class="d-inline-block-flex mt-4 justify-content-start">
+                  <a class="btn gradient btn-rounded font-weight-bold mr-2 wow fadeInLeft" data-wow-delay="0.3s">Saiba mais</a>
+                  <a class="btn btn-rounded btn-outline btn-secondary font-weight-bold ml-2 wow fadeInLeft" data-wow-delay="0.3s">
+                    <i class="fa fa-play-circle mr-2" aria-hidden="true"></i>Agende sua consulta</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Intro Section -->
+  <!--Main Navigation-->
+</header>

@@ -1,0 +1,249 @@
+html {
+  -ms-text-size-adjust: 100% !important;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+.body {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1em !important;
+  line-height: 1.625em !important;
+  margin: 0 !important;
+  color: #999 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-weight: 400 !important;
+}
+
+.view {
+  height: 100vh !important;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh !important;
+  }
+}
+
+body,
+h1 {
+  text-rendering: optimizeLegibility !important;
+}
+
+.navbar .navbar-light .navbar-toggler-icon {
+  color: #11af8b !important;
+}
+
+.top-nav-collapse {
+  background-color: #15deb0 !important;
+}
+
+.top-nav-collapse a[href="#home"],
+.top-nav-collapse a[href="#about"],
+.top-nav-collapse a[href="#curriculo"],
+.top-nav-collapse a[href="#services"],
+.top-nav-collapse a[href="#location"],
+.top-nav-collapse a[href="#contact"] {
+  line-height: 1em !important;
+  letter-spacing: 0.03em !important;
+  font-weight: 500 !important;
+  display: block !important;
+  color: #17191D !important;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
+  -webkit-transition-property: all !important;
+  transition-property: all !important;
+  -webkit-transition-duration: 0.2s !important;
+          transition-duration: 0.2s !important;
+  -webkit-transition-timing-function: ease-in-out !important;
+          transition-timing-function: ease-in-out !important;
+  -webkit-transition-delay: initial !important;
+          transition-delay: initial !important;
+  text-align: left !important;
+}
+
+a[href="#"] {
+  color: #1f2f1e !important;
+}
+
+a[href="/"] {
+  color: #1f2f1e !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.navbar:not(.top-nav-collapse) a[href="#home"],
+.navbar:not(.top-nav-collapse) a[href="#about"],
+.navbar:not(.top-nav-collapse) a[href="#curriculo"],
+.navbar:not(.top-nav-collapse) a[href="#services"],
+.navbar:not(.top-nav-collapse) a[href="#location"],
+.navbar:not(.top-nav-collapse) a[href="#contact"] {
+  line-height: 1em !important;
+  letter-spacing: 0.03em !important;
+  font-weight: 500 !important;
+  display: block !important;
+  color: #fff !important;
+  -webkit-transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s ease-in-out !important;
+  -webkit-transition-property: all !important;
+  transition-property: all !important;
+  -webkit-transition-duration: 0.2s !important;
+          transition-duration: 0.2s !important;
+  -webkit-transition-timing-function: ease-in-out !important;
+          transition-timing-function: ease-in-out !important;
+  -webkit-transition-delay: initial !important;
+          transition-delay: initial !important;
+  text-align: left !important;
+}
+
+.navbar:not(.top-nav-collapse) a[href="#"] {
+  color: #11af8b !important;
+}
+
+.navbar:not(.top-nav-collapse) a[href="/"] {
+  color: #11af8b !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #ffffff !important;
+    color: #17191D !important;
+  }
+  a[href="#home"],
+  a[href="#about"],
+  a[href="#curriculo"],
+  a[href="#services"],
+  a[href="#location"],
+  a[href="#contact"] {
+    line-height: 1em !important;
+    letter-spacing: 0.03em !important;
+    font-weight: 500 !important;
+    display: block !important;
+    color: #17191D !important;
+    -webkit-transition: all 0.2s ease-in-out !important;
+    transition: all 0.2s ease-in-out !important;
+    -webkit-transition-property: all !important;
+    transition-property: all !important;
+    -webkit-transition-duration: 0.2s !important;
+            transition-duration: 0.2s !important;
+    -webkit-transition-timing-function: ease-in-out !important;
+            transition-timing-function: ease-in-out !important;
+    -webkit-transition-delay: initial !important;
+            transition-delay: initial !important;
+    text-align: left !important;
+  }
+  a[href="#"] {
+    color: #1f2f1e !important;
+  }
+  a[href="/"] {
+    color: #1f2f1e !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.08em !important;
+  }
+}
+
+header {
+  -webkit-box-flex: 1 !important;
+      -ms-flex-positive: 1 !important;
+          flex-grow: 1 !important;
+}
+
+#home {
+  position: relative !important;
+  background-color: #fff !important;
+  background-size: auto !important;
+  background-clip: border-box !important;
+  background-origin: padding-box !important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+#home .full-bg-img {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-attachment: fixed !important;
+}
+
+@media (max-width: 1599px) and (min-width: 400px) {
+  #home .full-bg-img {
+    background: url("assets/img/apfit.jpeg") right -300px center no-repeat !important;
+    background-size: auto 100% !important;
+  }
+}
+
+.color-mask {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  mix-blend-mode: saturation !important;
+}
+
+#home .col-md-12 {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  padding: 12em auto 8em auto !important;
+  position: relative !important;
+  -webkit-box-flex: 1 !important;
+      -ms-flex-positive: 1 !important;
+          flex-grow: 1 !important;
+  max-width: 62.5em !important;
+}
+
+.header-name {
+  font-family: "Playfair Display", serif !important;
+  font-size: 2.4em !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  padding-bottom: 5px !important;
+  padding-top: 10px !important;
+  display: block !important;
+  color: #fff !important;
+  text-transform: capitalize !important;
+}
+
+.header-name span {
+  color: #15deb0 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3em !important;
+  padding-bottom: 25px !important;
+  display: block !important;
+  font-size: 40% !important;
+  text-transform: uppercase !important;
+}
+
+.header-about {
+  font-size: 1.1em;
+  font-weight: 400 !important;
+  padding-top: 5px !important;
+  letter-spacing: 0.26em !important;
+  padding-bottom: 15px !important;
+  color: gainsboro !important;
+  display: block !important;
+}
+
+.header-about span {
+  font-size: 1.0em;
+  font-weight: 400 !important;
+}
+/*# sourceMappingURL=styles.css.map */

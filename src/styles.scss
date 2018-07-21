@@ -1,0 +1,117 @@
+/* CUSTOM STYLES - YUNES ENDOCRINOLOGIA
+*/
+
+html,
+ body,
+ header,
+ .view {
+   height: 100vh !important;
+ }
+
+ @media (max-width: 740px) {
+   html,
+   body,
+   header,
+   .view .jarallax {
+     height: 100vh !important;
+   }
+ }
+
+
+
+ #home {
+   position: relative !important;
+   background-color: #fff !important;
+   background-size: auto !important;
+   background-clip: border-box !important;
+   background-origin: padding-box !important;
+   overflow: hidden !important;
+   display: flex !important;
+   flex-direction: column !important;
+ }
+
+ .ymask {
+   background: linear-gradient(130deg, rgba(1, 1, 1, 0.9) 0%, rgba(1, 1, 1, 0.2) 100%) !important;
+   background-size: cover !important;
+ }
+
+ #home .full-bg-img {
+   position: absolute !important;
+   top: 0 !important;
+   bottom: 0 !important;
+   left: 0 !important;
+   right: 0 !important;
+   background-attachment: fixed !important;
+ }
+
+ @media (max-width: 1599px) and (min-width: 1080px) {
+   #home .full-bg-img {
+     background: url('assets/img/apfit.jpeg') right center no-repeat !important;
+     background-size: auto 70% !important;
+   }
+ }
+
+ @media (max-width: 1079px) and (min-width: 1000px) {
+   #home .full-bg-img {
+     background: url('assets/img/apfit.jpeg') right -100px bottom -5px no-repeat !important;
+     background-size: auto 70% !important;
+   }
+ }
+
+ @media (max-width: 999px) {
+   #home .full-bg-img {
+     background: url('assets/img/apfit.jpeg') right -260px bottom -10px no-repeat !important;
+     background-size: auto 60% !important;
+   }
+ }
+
+ #home .col-md-12 {
+   flex-direction: column !important;
+   box-sizing: border-box !important;
+   padding: 12em auto 8em auto !important;
+   position: relative !important;
+   flex-grow: 1 !important;
+   max-width: 62.5em !important;
+ }
+
+ .header-name {
+   font-size: 2.4em !important;
+   font-weight: 700 !important;
+   line-height: 1 !important;
+   padding-bottom: 5px !important;
+   padding-top: 10px !important;
+   display: block !important;
+   color: #F4EFDC !important;
+   text-transform: capitalize !important;
+ }
+
+ .header-name span {
+   color: #ACEA3D !important;
+   font-weight: 700 !important;
+   letter-spacing: 0.3em !important;
+   padding-bottom: 25px !important;
+   display: block !important;
+   font-size: 40% !important;
+   text-transform: uppercase !important;
+ }
+
+ .header-about {
+   font-family: "Lora", serif !important;
+   font-size: 1.1em;
+   font-weight: 400 !important;
+   padding-top: 5px !important;
+   letter-spacing: 0.26em !important;
+   padding-bottom: 15px !important;
+   color: #F4EFDC !important;
+   display: block !important;
+ }
+
+ .header-about span {
+   font-size: 1.0em;
+   font-weight: 400 !important;
+ }
+
+
+ @import "assets/scss/font-awesome/scss/font-awesome";
+ @import "assets/scss/bootstrap/bootstrap";
+ @import "assets/scss/mdb/mdb";

@@ -1,0 +1,132 @@
+//*******************************************************************************
+// Custom Variables (MDB)
+// 1-
+// 2-
+// 3- MDB BOOTSTRAP
+// 4- MDB ANGULAR FREE
+// ...
+// 5- MDB ANGULAR PRO
+//*******************************************************************************
+
+//*******************************************************************************
+// 
+//*******************************************************************************
+
+// $ytheme1-base: #232931 !default;
+// $ytheme2-base: #393e46 !default;
+// $ytheme3-base: #00bfa5 !default;
+// $ytheme4-base: #15deb0 !default;
+// $ytitle1-base: #17191D !default;
+// $ytitle2-base: #4A4E57 !default;
+
+$hr-light: #ACEA3D !important;
+$hr-dark: #4A4E57 !default;
+
+// Colors
+// $y-primary-base: #ACEA3D;
+// $y-primary-color1: #D0F68B;
+// $y-primary-color2: #BDF160;
+// $y-primary-color3: #95DF10;
+// $y-primary-color4: #6FA907;
+
+// $yunes-primary: () !default;
+// $yunes-primary: map-merge(( "y-primary":(
+//   "y-primary-": ( "base": $y-primary-base),
+//   "y-primary-": ( "color1": $y-primary-color1),
+//   "y-primary-": ( "color2": $y-primary-color2),
+//   "y-primary-": ("color3": $y-primary-color3),
+//   "y-primary-": ( "color4": $y-primary-color4)
+//   $yunes-primary)));
+// 
+// // Colors classes
+// @each $color_name,
+// $color in $yunes-primary {
+//   @each $color_type,
+//   $color_value in $color {
+//     @if $color_type=="base" {
+//       .#{$color_name} {
+//         background-color: $color_value !important;
+//       }
+//       .#{$color_name}-text {
+//         color: $color-value !important;
+//       }
+//       .rgba-#{$color_name}-slight,
+//       .rgba-#{$color_name}-slight:after {
+//         background-color: rgba($color_value, .1);
+//       }
+//       .rgba-#{$color_name}-light,
+//       .rgba-#{$color_name}-light:after {
+//         background-color: rgba($color_value, .3);
+//       }
+//       .rgba-#{$color_name}-strong,
+//       .rgba-#{$color_name}-strong:after {
+//         background-color: rgba($color_value, .7);
+//       }
+//     }
+//     @else {
+//       @if $enable_full_palette {
+//         .#{$color_name}.#{$color_type} {
+//           background-color: $color_value !important;
+//         }
+//       }
+//     }
+//   }
+// }
+// 
+//*******************************************************************************
+// Variables
+//*******************************************************************************
+
+$lora-font-path:            "./assets/font/lora/" !default;
+
+//*******************************************************************************
+// Typography
+//*******************************************************************************
+
+// LORA FONT
+@font-face {
+  font-family: "Lora";
+  src: local(Lora Italic),
+  url("#{$lora-font-path}Lora-Italic.eot");
+  src: url("#{$lora-font-path}Lora-Italic.eot?#iefix") format("embedded-opentype"),
+  url("#{$lora-font-path}Lora-Italic.woff2") format("woff2"),
+  url("#{$lora-font-path}Lora-Italic.woff") format("woff"),
+  url("#{$lora-font-path}Lora-Italic.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: local(Lora Regular),
+  url("#{$lora-font-path}Lora-Regular.eot");
+  src: url("#{$lora-font-path}Lora-Regular.eot?#iefix") format("embedded-opentype"),
+  url("#{$lora-font-path}Lora-Regular.woff2") format("woff2"),
+  url("#{$lora-font-path}Lora-Regular.woff") format("woff"),
+  url("#{$lora-font-path}Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("#{$lora-font-path}Lora-BoldItalic.eot");
+  src: url("#{$lora-font-path}Lora-BoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$lora-font-path}Lora-BoldItalic.woff2") format("woff2"),
+  url("#{$lora-font-path}Lora-BoldItalic.woff") format("woff"),
+  url("#{$lora-font-path}Lora-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("#{$lora-font-path}Lora-Bold.eot");
+  src: url("#{$lora-font-path}Lora-Bold.eot?#iefix") format("embedded-opentype"),
+  url("#{$lora-font-path}Lora-Bold.woff2") format("woff2"),
+  url("#{$lora-font-path}Lora-Bold.woff") format("woff"),
+  url("#{$lora-font-path}Lora-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+}

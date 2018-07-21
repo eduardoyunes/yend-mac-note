@@ -1,0 +1,178 @@
+// Your custom skin
+$skins: () !default;
+$skins: map-merge(( "yunes": ( 
+  "skin-primary-color": #E4F1FE,
+   "skin-navbar": #444A5C,
+    "skin-footer-color": #393e46,
+     "skin-accent": #294429,
+      "skin-flat": #5BC0BE,
+         "skin-gradient-start": #00ffa1,
+          "skin-gradient-end": #00ffff,
+           "skin-mask-slight": #393e46,
+           "skin-mask-light": #393e46,
+            "skin-mask-strong": #393e46,
+              "skin-btn-primary": #3A506B,
+               "skin-btn-secondary": #5BC0BE,
+                "skin-btn-default": #393e46,
+                 "skin-text": #17191D,
+                  "skin-text2": #4A4E57,
+                  "skin-text3": $white,
+                  "skin-no-color": transparent
+                  )), $skins);
+// Skins
+@each $skin,
+$data in $skins {
+  .#{$skin}-skin {
+    .gradient {
+      background: map-get($data, skin-gradient-start);
+      background: linear-gradient(135deg, map-get($data, skin-gradient-start) 0%, map-get($data, skin-gradient-end) 100%);
+    }
+    .primary-color {
+      background-color: map-get($data, skin-primary-color) !important;
+      color: map-get($data, skin-accent) !important;
+    }
+    @media (min-width: 990px) {
+      .navbar:not(.top-nav-collapse), {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        a[href="#home"],
+        a[href="#about"],
+        a[href="#curriculo"],
+        a[href="#services"],
+        a[href="#location"],
+        a[href="#contact"] {
+          color: map-get($data, skin-flat) !important;
+        }
+      }
+    }
+    .navbar {
+      background-color: map-get($data, skin-navbar);
+      color: map-get($data, skin-text);
+      line-height: 1em !important;
+      letter-spacing: 0.03em !important;
+      font-weight: 500 !important;
+      text-align: left !important;
+      .fa {
+        color: map-get($data, skin-accent) !important;
+      }
+      a[href="/"],
+        {
+        color: map-get($data, skin-primary-color) !important;
+        font-weight: 600 !important;
+        letter-spacing: 0.08em !important;
+      }
+      .navbar-nav {
+        .dropdown-menu {
+          background-color: $white !important;
+        }
+        @if $skin=="yunes" {
+          .nav-item {
+            .dropdown-menu a {
+              &:hover,
+              &:focus,
+              &:active {
+                color: map-get($data, skin-accent) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .page-footer {
+      background-color: map-get($data, skin-footer-color);
+    }
+    @include make-button("primary", map-get($data, skin-btn-primary));
+    @include make-button("secondary", map-get($data, skin-btn-secondary));
+    @include make-button("default", map-get($data, skin-btn-default));
+    @include make-outline-button("primary", map-get($data, skin-btn-primary));
+    @include make-outline-button("secondary", map-get($data, skin-btn-secondary));
+    @include make-outline-button("default", map-get($data, skin-btn-default));
+    .card .btn-action {
+      background: map-get($data, skin-primary-color);
+      &:hover,
+      &:focus {
+        background-color: (map-get($data, skin-btn-secondary)) !important;
+      }
+      &.active {
+        background-color: (map-get($data, skin-primary-color))  !important;
+      }
+    } // Custom inputs
+    input[type="email"]:focus:not([readonly]),
+    input[type="text"]:focus:not([readonly]),
+    input[type="password"]:focus:not([readonly]),
+    input[type="number"]:focus:not([readonly]),
+    textarea.md-textarea:focus:not([readonly]) {
+      border-color: map-get($data, skin-accent);
+      box-shadow: 0 1px 0 0 map-get($data, skin-accent);
+      &+label {
+        color: map-get($data, skin-accent);
+      }
+    }
+    input[type=checkbox]:checked {
+      &+label {
+        &:before {
+          border-right: 2px solid map-get($data, skin-accent);
+          border-bottom: 2px solid map-get($data, skin-accent);
+        }
+      }
+    }
+    input[type=checkbox].filled-in:checked {
+      &+label {
+        &:before {
+          border-right: 2px solid $white-base;
+          border-bottom: 2px solid $white-base;
+        }
+        &:after {
+          background-color: map-get($data, skin-accent);
+          border-color: map-get($data, skin-accent);
+        }
+      }
+    }
+    .md-form {
+      .prefix {
+        &.active {
+          color: map-get($data, skin-accent);
+        }
+      }
+    } // Select colors
+    .dropdown-content {
+      li:not(.disabled) {
+        span {
+          color: map-get($data, skin-accent);
+        }
+      }
+    }
+    .top-nav-collapse {
+      background-color: map-get($data, skin-navbar);
+    }
+    .carousel-multi-item {
+      .controls-top>a,
+      .carousel-indicators li,
+      .carousel-indicators li.active {
+        background-color: map-get($data, skin-accent);
+      }
+    } // Form-header, card-header
+    .form-header,
+    .card-header {
+      background-color: ( map-get($data, skin-accent));
+    }
+    .spinner-primary-color,
+    .spinner-primary-color-only {
+      border-color: map-get($data, skin-primary-color);
+    }
+    .pagination-primary-color {
+      .page-item.active .page-link,
+      .page-item.active .page-link:focus,
+      .page-item.active .page-link:hover {
+        color: $white-base;
+        background-color: map-get($data, skin-primary-color);
+      }
+      .page-link {
+        color: map-get($data, skin-primary-color);
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

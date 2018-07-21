@@ -1,0 +1,40 @@
+.orange-text {
+  color: #fb5364 !important;
+}
+
+.mask.rgba-gradient {
+  background: -webkit-linear-gradient(45deg, rgba(255, 88, 88, 0.7), rgba(238, 66, 146, 0.8) 100%) !important;
+  background: -webkit-gradient(linear, 45deg, from(rgba(255, 88, 88, 0.7)), to(rgba(238, 66, 146, 0.8))) !important;
+  background: -o-linear-gradient(45deg, rgba(255, 88, 88, 0.7), rgba(238, 66, 146, 0.8) 100%) !important;
+  background: linear-gradient(to 45deg, rgba(255, 88, 88, 0.7), rgba(238, 66, 146, 0.8) 100%) !important;
+}
+
+
+
+@media (min-width: 1366px) {
+  .streak.streak-photo {
+    background-attachment: fixed !important;
+  }
+}
+
+.streak.streak-photo {
+  background-repeat: no-repeat !important;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.streak {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.streak.streak-md {
+  height: 400px;
+}
+
+  .streak.streak-md {
+    height: auto !important;
+  }
